@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IdProvider" IDEtalkID="8254EA2F71184C26028A56F07D81B600" />
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" assert-keyword="false" jdk-15="false" project-jdk-name="RVM: ruby-1.9.2-p290" project-jdk-type="RUBY_SDK" />
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
+</project>
+

@@ -1,0 +1,44 @@
+<h1>LoadingRamp#ramp</h1>
+
+<%= form_for "thing_in", :url => loading_ramp_good_in_path do |f| %>
+  <%= f.label :barcode %>
+  <%= f.text_field :barcode %>
+  <%= f.label :quantity %>
+  <%= f.text_field :quantity, :size => 3 %>
+  <%= f.submit 'Thing in' %>
+<%- end %>
+
+<%= form_for "thing_out", :url => loading_ramp_good_out_path do |f| %>
+  <%= f.label :barcode %>
+  <%= f.text_field :barcode %>
+  <%= f.label :quantity %>
+  <%= f.text_field :quantity, :size => 3 %>
+  <%= f.submit 'Thing out' %>
+<%- end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Barcode</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%- @last_things.each do |thing| %>
+      <tr>
+        <td><%= thing.name %></td>
+        <td><%= thing.description %></td>
+        <td><%= thing.barcode %></td>
+        <td><%= thing.quantity %></td>
+      </tr>
+    <%- end %>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+  $(function () {
+    $("#thing_in_barcode").focus();
+  });
+</script>

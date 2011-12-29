@@ -1,0 +1,2 @@
+module LoadingRampHelper
+end
